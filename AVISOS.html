@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVISOS - TRABALHOS E PENDÊNCIAS 2º B</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* ================================================= */
+        /* ESTILOS GERAIS E LAYOUT DA PÁGINA               */
+        /* ================================================= */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6; /* Fundo mais claro */
+            color: #333;
+        }
+
+        /* Cabeçalho da página de Avisos */
+        header {
+            background-color: #3498db; /* Azul vibrante */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 800;
+        }
+
+        /* Container principal para centralizar o conteúdo */
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Botão de Retorno (Voltar para o Painel) */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 25px;
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #3498db;
+        }
+
+        /* ================================================= */
+        /* ESTILOS DOS AVISOS (CARDS)                      */
+        /* ================================================= */
+        .notice-board {
+            display: flex;
+            flex-direction: column;
+            gap: 25px; /* Espaço entre os avisos */
+        }
+
+        .notice-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            border-left: 5px solid; /* Linha de cor para indicar a prioridade */
+        }
+
+        .notice-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .notice-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .notice-header h3 {
+            margin: 0;
+            font-size: 1.4em;
+            color: #2c3e50;
+        }
+
+        .notice-date {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            font-weight: 600;
+        }
+        
+        /* Destaque para o valor e prazo */
+        .notice-content strong {
+            color: #e74c3c; /* Vermelho para prazo */
+        }
+        .notice-content p {
+            line-height: 1.6;
+        }
+
+        /* Estilos específicos por PRIORIDADE */
+
+        /* Urgente: Vermelho */
+        .priority-urgent {
+            border-left-color: #e74c3c;
+        }
+        .priority-urgent .notice-header h3 {
+            color: #e74c3c;
+        }
+        
+        /* Importante: Laranja */
+        .priority-important {
+            border-left-color: #f39c12;
+        }
+        .priority-important .notice-header h3 {
+            color: #f39c12;
+        }
+        
+        /* Geral: Azul */
+        .priority-general {
+            border-left-color: #3498db;
+        }
+        .priority-general .notice-header h3 {
+            color: #3498db;
+        }
+        
+        /* Alerta (Amarelo, ideal para pendências não confirmadas) */
+        .priority-alert {
+            border-left-color: #ffc107;
+        }
+        .priority-alert .notice-header h3 {
+            color: #ffc107;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #bdc3c7;
+            color: #2c3e50;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TRABALHOS E PENDÊNCIAS ACADÊMICAS</h1>
+        <p>Avisos Urgentes do 2º B - Mantenha-se atualizado!</p>
+    </header>
+
+    <div class="container">
+        <a href="#" class="back-link">← Voltar ao Painel Principal</a> 
+        <p style="text-align: right; color: #7f8c8d; font-size: 0.9em; margin-bottom: 30px;">
+            **Última Atualização:** 17 de Outubro de 2025
+        </p>
+
+        <div class="notice-board">
+            
+            <div class="notice-card priority-urgent">
+                <div class="notice-header">
+                    <h3>BIOLOGIA: Recuperação/Atribuição de Nota</h3>
+                    <span class="notice-date">VALOR: 4,0</span>
+                </div>
+                <div class="notice-content">
+                    <p>Prazo Final: **20/10 (PRÓXIMA AULA)**</p>
+                    <p>Copiar a prova de biologia (textos e questões) no caderno para entrega. <strong>Não é necessário copiar as imagens.</strong></p>
+                </div>
+            </div>
+
+            <div class="notice-card priority-important">
+                <div class="notice-header">
+                    <h3>BIOLOGIA: Atividade em Folha</h3>
+                    <span class="notice-date">VALOR: 6,0</span>
+                </div>
+                <div class="notice-content">
+                    <p>Prazo Final: **07/11**</p>
+                    <p>Realizar todas as tarefas solicitadas na folha de explicações entregue pela professora.</p>
+                </div>
+            </div>
+
+            <div class="notice-card priority-important">
+                <div class="notice-header">
+                    <h3>INGLÊS: Apresentação (Slide + Vídeo)</h3>
+                    <span class="notice-date">VALOR TOTAL: 6,0 (2,0 por etapa)</span>
+                </div>
+                <div class="notice-content">
+                    <p>Prazo Final: **A DEFINIR**</p>
+                    <p>Atividade composta por SLIDE, APRESENTAÇÃO e VÍDEO. Grupos e temas já foram definidos individualmente. **Aguardar a data oficial de entrega.**</p>
+                </div>
+            </div>
+            
+            <div class="notice-card priority-general">
+                <div class="notice-header">
+                    <h3>EDUCAÇÃO FINANCEIRA: 10 Questões</h3>
+                    <span class="notice-date">VALOR: 4,0</span>
+                </div>
+                <div class="notice-content">
+                    <p>Prazo Final: **A CONFIRMAR**</p>
+                    <p>Copiar as 10 questões no caderno e entregá-las. **Verificar com a professora se a entrega é na próxima aula.**</p>
+                </div>
+            </div>
+
+            <div class="notice-card priority-alert">
+                <div class="notice-header">
+                    <h3>⚠️ PENDÊNCIA CRÍTICA: Trabalhos sobre Filmes (Inglês e Português)</h3>
+                    <span class="notice-date">STATUS: IR ATRÁS DA INFORMAÇÃO</span>
+                </div>
+                <div class="notice-content">
+                    <p><strong>INGLÊS:</strong> O trabalho sobre o filme já foi feito em sala. A tarefa é **ir atrás do status** (nota/devolução) e da instrução completa.</p>
+                    <p><strong>PORTUGUÊS:</strong> Trabalho sobre filme. **Líder não sabe** se a professora entregou as instruções. **Verificar URGENTE.**</p>
+                </div>
+            </div>
+
+            <div class="notice-card priority-general">
+                <div class="notice-header">
+                    <h3>ARTES: Atividade com Quadros</h3>
+                    <span class="notice-date">VALOR / PRAZO: A DEFINIR</span>
+                </div>
+                <div class="notice-content">
+                    <p>A professora está organizando a compra de quadros (custo individual). **Aguardar mais detalhes** sobre o valor da nota, custo e prazo de entrega.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Página de Avisos e Calendário - Atualizado em 17/10/2025 - 2º B</p>
+    </footer>
+
+</body>
+</html>
